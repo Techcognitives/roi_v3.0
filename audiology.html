@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Cognivue is the first computerized cognitive test cleared by the FDA and was intuitively designed to eliminate testing variables. It identifies changes in brain function that could indicate an impairment using adaptive psychophysics. ">
+  <title>ROI Calculator - Cash Pay Model</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+  
+  <h1 class="trigger" style="color: #288FDB;text-align: center; cursor: pointer;"><u>Audiology</u></h1>  
+
+  <div class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div class="dialog-bg">
+            <p class="dialog-title">Enter your <strong>Practice Name</strong> for personalization</p>
+            <div class="dialog-border">
+              <input type="text"  placeholder="Practice Name" >
+
+            </div>
+            <div class="dialog-border dialog-left">
+              <input type="text"  placeholder="State" >
+
+            </div>
+            <div class="dialog-border dialog-right">
+              <input type="text" placeholder="Number of Locations" >
+
+            </div>
+            <div class="clear"></div>
+                       <p class="dialog-button"><a href="index.html"> <span>Submitt</span></a></p>
+            
+          </div>
+      </div>
+  </div>
+  <script src='js/jquery.min.js'></script>
+
+<script src="js/script.js"></script>
+<script>
+  var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+</script>
+
+</body>
+
+</html>
